@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Form</title>
+</head>
+<body>
+
+  <h1>Sample Form</h1>
+
+  <form id="sampleForm" action="submit_form.php" method="post">
+    <!-- Name -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+
+    <!-- Phone -->
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+    <br>
+
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+    <br>
+
+    <!-- Regions -->
+    <label for="region">Region:</label>
+    <select id="region" name="region" required>
+      <option value="" selected disabled>Select Region</option>
+      <option value="Dar es Salaam">Dar es Salaam</option>
+      <option value="Dodoma">Dodoma</option>
+      <option value="Kigoma">Kigoma</option>
+      <!-- Add more regions as needed -->
+    </select>
+    <br>
+
+    <!-- Districts -->
+    <label for="district">District:</label>
+    <select id="district" name="district" required>
+      <option value="" selected disabled>Select District</option>
+      <option value="Kinondoni">Kinondoni</option>
+      <option value="Ilala">Ilala</option>
+      <option value="Temeke">Temeke</option>
+      <!-- Add more districts as needed -->
+    </select>
+    <br>
+
+    <!-- Gender -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other" required>
+    <label for="other">Other</label>
+    <br>
+
+    <!-- Language Proficiency -->
+    <label for="languageProficiency">Language Proficiency:</label>
+    <select id="languageProficiency" name="languageProficiency" required>
+      <option value="" selected disabled>Select Language Proficiency</option>
+      <option value="english">English</option>
+      <option value="swahili">Swahili</option>
+      <option value="french">French</option>
+      <option value="other">Other</option>
+    </select>
+    <br>
+
+    <!-- Submit button -->
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
